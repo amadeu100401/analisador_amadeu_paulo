@@ -1,0 +1,31 @@
+PROGRAM TESTE01;
+
+VAR x: INTEGER;
+
+BEGIN
+
+WHILE (x < y) DO y := TRUE;
+
+END.
+
+
+PROGRAM TESTE02;
+
+VAR varTeste01: STRING;
+
+BEGIN
+
+WHILE (x < y) DO varTeste01 := AMADEU;
+
+END.
+
+
+PROGRAM TESTE03;
+
+VAR x: BOOLEAN;
+
+BEGIN
+
+IF ( x == TRUE) THEN x := FALSE ELSE x := TRUE ;
+
+END.
