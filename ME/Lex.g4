@@ -1,0 +1,21 @@
+lexer grammar MeAL;
+
+CTE: [0-9]+ |'-'[0-9]+ ;
+CADEIA : '"'('A'..'Z'|'a'..'z'|'0'..'9'|'-'|'_')+ '"';
+IDENTIFIER : [a-zA-Z][a-zA-Z0-9]*;
+BOOLEAN : 'TRUE' | 'FALSE';
+OPAD : '+' | '-';
+OPMULT : '*'|'/';
+OPLOG : 'OR'|'AND';
+OPNEG : '~';
+OPREL : '<'|'<='|'>'|'>='|'=='|'<>';
+PVIG : ';';
+PONTO : '.';
+DPONTOS : ':';
+VIG : ',';
+ABPAR : '(';
+FPAR : ')';
+ATRIB : ':=';
+RESERVADA : 'PROGRAM'|'BEGIN' | 'END' | 'WHILE' | 'DO' | 'READ' | 'VAR' | 'WRITE' |'IF' | 'ELSE';
+WS : (' '|'\t'|'\n'|'\r')+ -> skip;
+COMENTARIO : '//' ~[\r\n]* -> skip;
