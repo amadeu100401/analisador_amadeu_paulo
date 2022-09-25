@@ -1,0 +1,3 @@
+antlr4 [nome-do-arquivo].g4
+compile [nomedoarquivo]*.java
+grun [nome-do-arquivo] [metodo inicial] -gui
